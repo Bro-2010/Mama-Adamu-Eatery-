@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#111111">
+<title>Mama Adamu Eatery | Digital Menu</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="brand-mark">MA</div>
+  <div>
+    <p class="eyebrow">WELCOME TO</p>
+    <h1>Mama Adamu Eatery</h1>
+    <p class="tagline">Fresh food • Great taste • Friendly service</p>
+  </div>
+</header>
+
+<section class="info-bar">
+  <span>📍 Dungy, around Happy Home JHS</span>
+  <span>🟢 Open for orders</span>
+</section>
+
+<main>
+  <section class="intro">
+    <h2>Our Digital Menu</h2>
+    <p>Choose your meal, select your quantity and send your order directly on WhatsApp.</p>
+  </section>
+
+  <div class="search-wrap">
+    <span>🔎</span>
+    <input id="search" type="search" placeholder="Search food or drink...">
+  </div>
+
+  <nav id="categories" class="categories"></nav>
+  <section id="menu" class="menu-grid"></section>
+  <p id="empty" class="empty" hidden>No menu item found. Try another search.</p>
+</main>
+
+<section class="order-card">
+  <div>
+    <p class="eyebrow">READY TO ORDER?</p>
+    <h2>Order on WhatsApp</h2>
+    <p>Your selected items will be sent as a WhatsApp message.</p>
+  </div>
+  <button id="orderBtn" class="primary">View Order <span id="count">0</span></button>
+</section>
+
+<footer>
+  <strong>Mama Adamu Eatery</strong>
+  <p>Good food, made with care.</p>
+  <a href="tel:+233000000000">📞 Call to order</a>
+  <a href="https://wa.me/233000000000" target="_blank" rel="noopener">💬 WhatsApp</a>
+  <small>Digital menu by Bright Vission Digital Design</small>
+</footer>
+
+<div id="cartModal" class="modal" aria-hidden="true">
+  <div class="modal-box">
+    <button id="closeModal" class="close">×</button>
+    <h2>Your Order</h2>
+    <div id="cartItems"></div>
+    <div class="total"><span>Total</span><strong id="total">GH₵0</strong></div>
+    <button id="sendBtn" class="primary full">Send Order on WhatsApp</button>
+  </div>
+</div>
+
+<script src="menu.js"></script>
+</body>
+</html>
